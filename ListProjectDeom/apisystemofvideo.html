@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="YQYStudiosUpdate YQYStudio api调试工具 解析工具 视频 api">
+		<meta name="generator" content="Hugo 0.82.0">
+		<title>解析类Api仓库</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="img/moon.png" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<meta name="theme-color" content="#563d7c">
+
+
+		<style>
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			@media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+					font-size: 3.5rem;
+				}
+			}
+		</style>
+
+
+		<!-- Custom styles for this template -->
+		<link href="css/temppate.css" rel="stylesheet">
+		<link href="css/apisystemstyle/apivideo.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<section id="video_api">
+			<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+				<a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">万能助手</a>
+				<button class="navbar-toggler position-absolute d-md-none collapsed" type="button"
+					data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<input class="form-control form-control-dark w-100" type="text" placeholder="全局搜索" aria-label="Search">
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						<a class="nav-link" href="#">登录</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="container-fluid">
+				<div class="row">
+					<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+						<div class="sidebar-sticky pt-0">
+							
+					
+					
+							<div class="accordion" id="data_sort">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<button
+												class="btn btn-link btn-block text-left  text-decoration-none text-dark"
+												type="button" data-toggle="collapse" data-target="#datas">
+												<i class="bi bi-caret-right-fill">数据处理</i> 
+											</button>
+										</h2>
+									</div>
+					
+									<div id="datas" class="collapse" aria-labelledby="headingOne"
+										data-parent="#data_sort">
+										<div class="card-body p-0">
+											<div class="list-group ">
+												<button type="button"
+													class="list-group-item list-group-item-action " onclick="JumpPage('trans')">
+													处理
+												</button>
+												<button type="button" class="list-group-item list-group-item-action">A
+													列表2</button>
+												<button type="button" class="list-group-item list-group-item-action">A
+													列表3</button>
+												<button type="button" class="list-group-item list-group-item-action">A
+													列表4</button>
+												<button type="button" class="list-group-item list-group-item-action"
+													>列表5</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					
+					
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<button
+												class="btn btn-link btn-block text-left  text-decoration-none text-dark"
+												type="button" data-toggle="collapse" data-target="#collapseOne">
+												<i class="bi bi-caret-right-fill">Api管理</i> 
+											</button>
+										</h2>
+									</div>
+					
+									<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+										data-parent="#accordionExample">
+										<div class="card-body p-0">
+											<div class="list-group list-group-flush p-0">
+												<button class="list-group-item list-group-item-action" onclick="JumpPage('apisystemofvideo')">解析类api</button>
+												<button class="list-group-item list-group-item-action">图片类api</button>
+												<button class="list-group-item list-group-item-action">文本类api</button>
+												<button class="list-group-item list-group-item-action">生活类api</button>
+												<button class="list-group-item list-group-item-action">杂物类api</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="accordion" id="run_temp">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<button
+												class="btn btn-link btn-block text-left  text-decoration-none text-dark"
+												type="button" data-toggle="collapse" data-target="#run_list">
+												<i class="bi bi-caret-right-fill">测试工具</i>
+											</button>
+										</h2>
+									</div>
+							
+									<div id="run_list" class="collapse" aria-labelledby="headingOne"
+										data-parent="#run_temp">
+										<div class="card-body p-0">
+											<div class="list-group list-group-flush p-0">
+												<button class="list-group-item list-group-item-action"
+													onclick="JumpPage('TestRun')">页面调试</button>
+												<button class="list-group-item list-group-item-action">其他</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="accordion" id="data_gather">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<button
+												class="btn btn-link btn-block text-left  text-decoration-none text-dark"
+												type="button" data-toggle="collapse" data-target="#data_list">
+												<i class="bi bi-caret-right-fill">数据汇总</i>
+											</button>
+										</h2>
+									</div>
+							
+									<div id="data_list" class="collapse" 
+										data-parent="#data_gather">
+										<div class="card-body p-0">
+											<div class="list-group list-group-flush p-0">
+												<button class="list-group-item list-group-item-action"
+													onclick="JumpPage('index')">服务器数据</button>
+												<button class="list-group-item list-group-item-action">其他</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</nav>
+					<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+						<div
+							class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+							<h1 class="h2">解析类api仓库</h1>
+							<div class="btn-toolbar mb-2 mb-md-0">
+								<div class="btn-group mr-2">
+									<button type="button" class="btn btn-sm btn-outline-secondary">刷新</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">清空</button>
+								</div>
+								<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+									<span data-feather="calendar"></span>
+									统计
+								</button>
+							</div>
+						</div>
+
+						<section id="tips">
+
+						</section>
+
+						<div class="card box-main">
+							<div class="card-header">api调试界面</div>
+							<div class="card-body">
+								<div>
+									<div class="form-group">
+										<label for="exampleInputEmail1">在下面的输入框中输入接口地址</label>
+										<input type="text" class="form-control" id="exampleInputEmail1"
+											v-model="input_api">
+										<small id="emailHelp" class="form-text text-muted">自己输入或者从已经在列表中的接口中选择</small>
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1">在下面的输入框中输入测试解析地址</label>
+										<input type="text" class="form-control" id="exampleInputPassword1"
+											v-model="input_url">
+									</div>
+									<div class="form-group form-check">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="addapi_flag">
+										<label class="form-check-label" for="exampleCheck1">添加接口时选我</label>
+									</div>
+									<div class="form-group" v-show="addapi_flag">
+										<input type="text" class="form-control" v-bind:placeholder="add_tips" v-model="add_input_name">
+										<p class="mt-2 mb-2 user-select-none text-danger font-weight-bold" >{{add_tips_all}}</p>
+										<button type="button" class="btn btn-success mt-2" @click="AddApi(1)" >添加接口</button>
+									</div>
+									<div class="form-inline mt-4 mb-4">
+										<div class="form-group mb-2">
+											选择请求方式 :
+											<select class="form-control form-control-sm ml-sm-2"
+												v-model="select_method">
+												<option v-for="(item,index) in method_item">{{item}}</option>
+											</select>
+										</div>
+										<div class="form-group mx-sm-3 mb-2">
+											选择该接口状态 :
+											<select class="form-control form-control-sm ml-sm-2" v-model="select_state">
+												<option v-for="(item,index) in state_item">{{item}}</option>
+											</select>
+										</div>
+										<div class="form-group mx-sm-3 mb-2">
+											选择是否支持跨域 :
+											<select class="form-control form-control-sm ml-sm-2" v-model="select_cross">
+												<option v-for="(item,index) in cross_item">{{item}}</option>
+											</select>
+										</div>
+									</div>
+									
+									<button type="submit" class="btn btn-outline-success"
+										@click="HandelApiVideo">硬解</button>
+										<button class="btn btn-outline-primary ml-sm-2" @click="SelectRandomApi">随机选个接口</button>
+								</div>
+								<small id="emailHelp" class="form-text text-muted">测试后在下面界面中显示</small>
+								<iframe class="mt-4 context-ifarm-video" webkitallowfullscreen="" mozallowfullscreen=""
+									allowfullscreen="" width="100%" id="in_ifarm" height="200px" ref="show_api" >
+
+								</iframe>
+							</div>
+							<div class="card-footer text-muted">
+								信息注明
+							</div>
+						</div>
+						<!-- 		<canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
+
+						<h2 class="mt-4">api仓库</h2>
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead class="table-dark">
+									<tr>
+										<th>#</th>
+										<th>接口名</th>
+										<th>地址</th>
+										<th>请求方式</th>
+										<th>状态</th>
+										<th>是否支持跨域</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr v-for="(item,index) in api_item " :key="index">
+										<td class="control-tr-width font-weight-bold">{{index+1}}</td>
+										<td class="control-tr-width">{{item.name}}</td>
+										<td class="control-tr-width">{{item.api}}</td>
+										<td class="control-tr-width text-success" v-if="item.type=='get'">{{item.type}}
+										</td>
+										<td class="control-tr-width text-danger" v-else="item.type=='post'">
+											{{item.type}}</td>
+										<td class="control-tr-width text-success" v-if="item.stat=='可用'">{{item.stat}}
+										</td>
+										<td class="control-tr-width text-danger font-weight-bold"
+											v-else="item.stat=='不可用'">{{item.stat}}</td>
+										<td class="control-tr-width text-success" v-if="item.cross=='是'">{{item.cross}}
+										</td>
+										<td class="control-tr-width text-danger font-weight-bold"
+											v-if="item.cross=='否'">{{item.cross}}</td>
+										<td class="control-tr-width">
+											<button class="btn btn-outline-primary ml-sm-2" @click="SelectItemIndex(index)">选中</button>
+											<button class="btn btn-outline-danger ml-sm-2">删除</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</main>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/main.js"></script>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap.bundle.js"></script>
+		<script src="js/md5.js"></script>
+		<script src="js/apisystemjs/apivideo.js"></script>
+	</body>
+</html>

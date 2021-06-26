@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="YQYStudiosUpdate YQYStudio 数据汇总">
+		<meta name="generator" content="Hugo 0.82.0">
+		<title>数据汇总</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/indexcss/index.css" />
+		<link rel="icon" type="image/png" href="img/moon.png" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<meta name="theme-color" content="#563d7c">
+
+
+		<style>
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			@media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+					font-size: 3.5rem;
+				}
+			}
+		</style>
+
+
+		<!-- Custom styles for this template -->
+		<link href="css/temppate.css" rel="stylesheet">
+	</head>
+	<body>
+		<section id="paper">
+			<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+				<a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">万能助手</a>
+				<button class="navbar-toggler position-absolute d-md-none collapsed" type="button"
+					data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<input class="form-control form-control-dark w-100" type="text" placeholder="全局搜索" aria-label="Search">
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						<a class="nav-link" href="#">登录</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="container-fluid">
+				<div class="row">
+					<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+						<div class="sidebar-sticky pt-0">
+							
+					
+					
+							<div class="accordion" id="data_sort">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<button
+												class="btn btn-link btn-block text-left  text-decoration-none text-dark"
+												type="button" data-toggle="collapse" data-target="#datas">
+												<i class="bi bi-caret-right-fill">数据处理</i> 
+											</button>
+										</h2>
+									</div>
+					
+									<div id="datas" class="collapse" aria-labelledby="headingOne"
+										data-parent="#data_sort">
+										<div class="card-body p-0">
+											<div class="list-group ">
+												<button type="button"
+													class="list-group-item list-group-item-action " onclick="JumpPage('trans')">
+													处理
+												</button>
+												<button type="button" class="list-group-item list-group-item-action">A
+													列表2</button>
+												<button type="button" class="list-group-item list-group-item-action">A
+													列表3</button>
+												<button type="button" class="list-group-item list-group-item-action">A
+													列表4</button>
+												<button type="button" class="list-group-item list-group-item-action"
+													>列表5</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					
+					
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<button
+												class="btn btn-link btn-block text-left  text-decoration-none text-dark"
+												type="button" data-toggle="collapse" data-target="#collapseOne">
+												<i class="bi bi-caret-right-fill">Api管理</i> 
+											</button>
+										</h2>
+									</div>
+					
+									<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+										data-parent="#accordionExample">
+										<div class="card-body p-0">
+											<div class="list-group list-group-flush p-0">
+												<button class="list-group-item list-group-item-action" onclick="JumpPage('apisystemofvideo')">解析类api</button>
+												<button class="list-group-item list-group-item-action">图片类api</button>
+												<button class="list-group-item list-group-item-action">文本类api</button>
+												<button class="list-group-item list-group-item-action">生活类api</button>
+												<button class="list-group-item list-group-item-action">杂物类api</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="accordion" id="run_temp">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<button
+												class="btn btn-link btn-block text-left  text-decoration-none text-dark"
+												type="button" data-toggle="collapse" data-target="#run_list">
+												<i class="bi bi-caret-right-fill">测试工具</i>
+											</button>
+										</h2>
+									</div>
+							
+									<div id="run_list" class="collapse" aria-labelledby="headingOne"
+										data-parent="#run_temp">
+										<div class="card-body p-0">
+											<div class="list-group list-group-flush p-0">
+												<button class="list-group-item list-group-item-action"
+													onclick="JumpPage('TestRun')">页面调试</button>
+												<button class="list-group-item list-group-item-action">其他</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="accordion" id="data_gather">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<button
+												class="btn btn-link btn-block text-left  text-decoration-none text-dark"
+												type="button" data-toggle="collapse" data-target="#data_list">
+												<i class="bi bi-caret-right-fill">数据汇总</i>
+											</button>
+										</h2>
+									</div>
+							
+									<div id="data_list" class="collapse" 
+										data-parent="#data_gather">
+										<div class="card-body p-0">
+											<div class="list-group list-group-flush p-0">
+												<button class="list-group-item list-group-item-action"
+													onclick="JumpPage('index')">服务器数据</button>
+												<button class="list-group-item list-group-item-action">其他</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</nav>
+
+					<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4" >
+						<div
+							class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+							<h1 class="h2">服务器数据汇总</h1>
+							<div class="btn-toolbar mb-2 mb-md-0">
+								<div class="btn-group mr-2">
+									<button type="button" class="btn btn-sm btn-outline-secondary">刷新</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">清空</button>
+								</div>
+								<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+									<span data-feather="calendar"></span>
+									统计
+								</button>			
+							</div>
+						</div>
+						<div  v-bind:style="data_style" class="row" >
+							<div class="col-md-12" id="main" v-bind:style="data_style">
+								
+							</div>
+						</div>
+					</main>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/main.js"></script>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap.bundle.js"></script>
+		<script src="js/md5.js"></script>
+		<script src="js/echarts.js"></script>
+		<script src="js/indexjs/index.js"></script>
+		
+	</body>
+</html>
