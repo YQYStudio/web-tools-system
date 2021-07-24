@@ -13,7 +13,7 @@ function Trans(text,app) {
 	sign = MD5(str1);
 	var user_to;
 	$.ajax({
-		url: 'http://api.fanyi.baidu.com/api/trans/vip/translate',
+		url: 'https://api.fanyi.baidu.com/api/trans/vip/translate',
 		type: 'GET',
 		dataType: 'jsonp',
 		data: {
